@@ -13,17 +13,16 @@ const returnfun = () => {
   document.getElementById("myList").appendChild(del);
 
   const edit = document.createElement("button");
-  edit.setAttribute("id","editt");
+  edit.setAttribute("id", "editt");
   edit.textContent = "Edit";
   document.getElementById("myList").appendChild(edit);
 
   const save = document.createElement("button");
-  save.setAttribute("id","button");
+  save.setAttribute("id", "button");
   save.textContent = "Save";
   document.getElementById("myList").appendChild(save);
 
-  del.addEventListener("click", myFunction);
-  function myFunction() {
+  del.addEventListener("click", function () {
     document.getElementById("node");
     node.remove();
     document.getElementById("del");
@@ -32,21 +31,20 @@ const returnfun = () => {
     edit.remove();
     document.getElementById("save");
     save.remove();
-  }
-  save.addEventListener("click", savefunction);
-  function savefunction(){
+  });
+  save.addEventListener("click", function () {
     document.getElementById("save");
     save.remove();
-  }
+  });
 
-  edit.addEventListener("click", function() {
-  node.contentEditable = true;
-  node.style.backgroundColor = "yellow";
-  document.getElementById("myList").appendChild(save);
-} );
+  edit.addEventListener("click", function () {
+    node.contentEditable = true;
+    node.style.backgroundColor = "yellow";
+    document.getElementById("myList").appendChild(save);
+  });
 
-  save.addEventListener("click", function() {
-  node.contentEditable = false;
-  node.style.backgroundColor = "gray";
-} )
-}
+  save.addEventListener("click", function () {
+    node.contentEditable = false;
+    node.style.backgroundColor = "gray";
+  });
+};
