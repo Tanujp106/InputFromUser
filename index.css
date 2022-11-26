@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+body{
+    background-image: url(p.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    margin: 0;
+    font-family: 'Aboreto', cursive;
+}
+
+.container1{
+    margin: 300px;
+    font-size: 20px;
+    width: 40%;
+    align-items: center;
+}
+button{
+    margin: 10px;
+    border-radius: 12px;
+    padding: 10px 30px;
+    color: black;
+    background-color: rgb(108, 188, 140);
+    box-shadow: 2px 3px rgb(2, 78, 31);
+}
+.hello{
+    color: black;
+    font-size: 12px;
+}
+input{
+    margin: 10px;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 10px 32px;
+    box-shadow: 2px 3px rgb(205, 205, 205);
+}
+.placeholder{
+    font: black;    
+}
